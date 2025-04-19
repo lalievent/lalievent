@@ -1,4 +1,4 @@
-</head>
+    </head>
 <body>
     <!-- Header -->
     <header id="header">
@@ -46,7 +46,9 @@
         <div class="container">
             <div class="section-title">
                 <h2>קצת עליי</h2>
-                <p>מפיק ומנהל אירועים עם ניסיון עשיר בהפקת חתונות מותאמות אישית לכל תקציב וסגנון</p>
+                <p>מפיק ומנהל אירועים עם ניסיון עשיר בהפקת חתונות מותאמות אישית לכל תקציב וסגנון
+
+                </p>
             </div>
             <div class="about-content">
                 <div class="about-image">
@@ -167,7 +169,7 @@
                             <img src="https://i.ibb.co/4nw4c4b2/2025-04-18-170417.png" alt="זוג שנל">
                         </div>
                         <div class="author-info">
-                            <h4>משפחת שנל</h4>
+                            <h4> דוד וליאם</h4>
                             <div class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -1595,3 +1597,691 @@
             .contact-btn-text h4 {
                 font-size: 16px;
             }
+<!-- הוספת הכפתור נגישות -->
+<div class="accessibility-btn-wrapper">
+    <button type="button" class="accessibility-btn" id="accessibilityBtn" aria-label="תפריט נגישות">
+        <i class="fas fa-universal-access"></i>
+        <span>נגישות</span>
+    </button>
+    
+    <div class="accessibility-menu" id="accessibilityMenu">
+        <div class="accessibility-menu-header">
+            <h3>הגדרות נגישות</h3>
+            <button class="close-accessibility-menu" id="closeAccessibilityMenu" aria-label="סגור תפריט נגישות">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="accessibility-menu-content">
+            <div class="accessibility-group">
+                <h4>גודל טקסט</h4>
+                <div class="accessibility-buttons">
+                    <button class="acc-btn" id="increaseText" aria-label="הגדל טקסט">
+                        <i class="fas fa-plus"></i> הגדל טקסט
+                    </button>
+                    <button class="acc-btn" id="decreaseText" aria-label="הקטן טקסט">
+                        <i class="fas fa-minus"></i> הקטן טקסט
+                    </button>
+                    <button class="acc-btn" id="resetText" aria-label="איפוס גודל טקסט">
+                        <i class="fas fa-sync-alt"></i> איפוס
+                    </button>
+                </div>
+            </div>
+            
+            <div class="accessibility-group">
+                <h4>ניגודיות וצבעים</h4>
+                <div class="accessibility-buttons">
+                    <button class="acc-btn" id="highContrast" aria-label="ניגודיות גבוהה">
+                        <i class="fas fa-adjust"></i> ניגודיות גבוהה
+                    </button>
+                    <button class="acc-btn" id="invertColors" aria-label="היפוך צבעים">
+                        <i class="fas fa-palette"></i> היפוך צבעים
+                    </button>
+                    <button class="acc-btn" id="resetColors" aria-label="איפוס צבעים">
+                        <i class="fas fa-sync-alt"></i> איפוס צבעים
+                    </button>
+                </div>
+            </div>
+            
+            <div class="accessibility-group">
+                <h4>מאפיינים נוספים</h4>
+                <div class="accessibility-buttons">
+                    <button class="acc-btn" id="highlightLinks" aria-label="הדגשת קישורים">
+                        <i class="fas fa-link"></i> הדגשת קישורים
+                    </button>
+                    <button class="acc-btn" id="readableFont" aria-label="פונט קריא">
+                        <i class="fas fa-font"></i> פונט קריא
+                    </button>
+                    <button class="acc-btn" id="lineSpacing" aria-label="ריווח שורות">
+                        <i class="fas fa-text-height"></i> ריווח שורות
+                    </button>
+                </div>
+            </div>
+            
+            <div class="accessibility-group">
+                <h4>איפוס הגדרות</h4>
+                <div class="accessibility-buttons">
+                    <button class="acc-btn reset-all" id="resetAll" aria-label="איפוס כל ההגדרות">
+                        <i class="fas fa-undo"></i> איפוס כל ההגדרות
+                    </button>
+                </div>
+            </div>
+            
+            <div class="accessibility-statement">
+                <h4>הצהרת נגישות</h4>
+                <p>אתר זה עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), תשע"ג-2013</p>
+                <a href="#accessibility-statement" class="acc-link" id="accessibilityStatementLink">לצפייה בהצהרת הנגישות המלאה</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- חלונית הצהרת נגישות (תופיע בלחיצה על הקישור בתפריט) -->
+<div class="accessibility-statement-modal" id="accessibilityStatementModal">
+    <div class="accessibility-statement-content">
+        <div class="accessibility-statement-header">
+            <h3>הצהרת נגישות - לאלי איוונט</h3>
+            <button class="close-statement" id="closeStatement" aria-label="סגור הצהרת נגישות">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="accessibility-statement-body">
+            <p>אתר זה עומד בדרישות תקנות שוויון זכויות לאנשים עם מוגבלות (התאמות נגישות לשירות), תשע"ג-2013.</p>
+            <p>האתר נבדק ונמצא נגיש בהתאם לתקן הישראלי (ת"י 5568) והבינלאומי (WCAG 2.0 ברמת AA).</p>
+            <h4>מאפייני הנגישות באתר:</h4>
+            <ul>
+                <li>האתר מאפשר שינוי גודל הטקסט</li>
+                <li>האתר מאפשר שינוי ניגודיות צבעים</li>
+                <li>האתר מאפשר הדגשת קישורים</li>
+                <li>האתר מאפשר שימוש בפונט קריא יותר</li>
+                <li>האתר מאפשר ריווח בין שורות</li>
+                <li>האתר נבנה בצורה המאפשרת ניווט נוח באמצעות מקלדת</li>
+                <li>כל התמונות באתר מכילות טקסט חלופי</li>
+                <li>כל האלמנטים באתר מוגדרים כראוי לקוראי מסך</li>
+            </ul>
+            <h4>פרטי רכז הנגישות:</h4>
+            <p>שם: עודד</p>
+            <p>טלפון: 052-229-8447</p>
+            <p>דוא"ל: oded@lalieventsocial.com</p>
+            <p>אם מצאתם תקלת נגישות באתר, אנא פנו אלינו ונתייחס לפנייתכם בהקדם.</p>
+            <p>הצהרה זו עודכנה בתאריך: 18.04.2025</p>
+        </div>
+    </div>
+</div>
+
+<!-- הוספת CSS לכפתור נגישות -->
+<style>
+    /* סגנון כפתור נגישות ותפריט */
+    .accessibility-btn-wrapper {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        z-index: 1001;
+        direction: rtl;
+    }
+
+    .accessibility-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: var(--dark-blue);
+        color: white;
+        border: none;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        transition: all 0.3s ease;
+        padding: 10px;
+    }
+
+    .accessibility-btn:hover, 
+    .accessibility-btn:focus {
+        background-color: var(--gold);
+        transform: translateY(-3px);
+    }
+
+    .accessibility-btn i {
+        font-size: 24px;
+        margin-bottom: 4px;
+    }
+
+    .accessibility-btn span {
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    /* תפריט נגישות */
+    .accessibility-menu {
+        position: fixed;
+        left: 20px;
+        bottom: 100px;
+        width: 320px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        z-index: 1002;
+        overflow: hidden;
+        display: none;
+        max-height: 80vh;
+        overflow-y: auto;
+        direction: rtl;
+        text-align: right;
+    }
+
+    .accessibility-menu.active {
+        display: block;
+    }
+
+    .accessibility-menu-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: var(--dark-blue);
+        color: white;
+    }
+
+    .accessibility-menu-header h3 {
+        margin: 0;
+        color: white;
+        font-size: 20px;
+    }
+
+    .close-accessibility-menu {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .accessibility-menu-content {
+        padding: 20px;
+    }
+
+    .accessibility-group {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .accessibility-group:last-child {
+        border-bottom: none;
+    }
+
+    .accessibility-group h4 {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: var(--dark-blue);
+    }
+
+    .accessibility-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .acc-btn {
+        padding: 8px 12px;
+        background-color: #f5f5f5;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .acc-btn:hover {
+        background-color: #e9e9e9;
+    }
+
+    .acc-btn.active {
+        background-color: var(--gold);
+        color: white;
+        border-color: var(--gold);
+    }
+
+    .acc-btn i {
+        font-size: 12px;
+    }
+
+    .reset-all {
+        background-color: #f8d7da;
+        color: #721c24;
+        border-color: #f5c6cb;
+    }
+
+    .reset-all:hover {
+        background-color: #f1b0b7;
+    }
+
+    .accessibility-statement {
+        background-color: #f9f9f9;
+        padding: 15px;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+
+    .accessibility-statement p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .acc-link {
+        color: var(--gold);
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .acc-link:hover {
+        text-decoration: underline;
+    }
+
+    /* חלונית הצהרת נגישות */
+    .accessibility-statement-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 1003;
+    }
+
+    .accessibility-statement-modal.active {
+        display: flex;
+    }
+
+    .accessibility-statement-content {
+        width: 90%;
+        max-width: 700px;
+        max-height: 80vh;
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        direction: rtl;
+    }
+
+    .accessibility-statement-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        background-color: var(--dark-blue);
+        color: white;
+    }
+
+    .accessibility-statement-header h3 {
+        margin: 0;
+        color: white;
+    }
+
+    .close-statement {
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .accessibility-statement-body {
+        padding: 20px;
+        overflow-y: auto;
+        max-height: 60vh;
+    }
+
+    .accessibility-statement-body p,
+    .accessibility-statement-body ul {
+        margin-bottom: 15px;
+    }
+
+    .accessibility-statement-body ul {
+        padding-right: 20px;
+    }
+
+    .accessibility-statement-body li {
+        margin-bottom: 5px;
+    }
+
+    /* קלאסים לשינויי נגישות */
+    body.accessibility-large-text {
+        font-size: 120% !important;
+    }
+
+    body.accessibility-larger-text {
+        font-size: 140% !important;
+    }
+
+    body.accessibility-high-contrast {
+        background-color: #000 !important;
+        color: #fff !important;
+    }
+
+    body.accessibility-high-contrast * {
+        background-color: #000 !important;
+        color: #fff !important;
+        border-color: #fff !important;
+    }
+
+    body.accessibility-high-contrast a, 
+    body.accessibility-high-contrast button {
+        color: #ffff00 !important;
+    }
+
+    body.accessibility-inverted {
+        filter: invert(100%) !important;
+    }
+
+    body.accessibility-highlight-links a {
+        background-color: yellow !important;
+        color: black !important;
+        text-decoration: underline !important;
+        padding: 2px !important;
+    }
+
+    body.accessibility-readable-font * {
+        font-family: Arial, sans-serif !important;
+    }
+
+    body.accessibility-line-spacing {
+        line-height: 2.2 !important;
+    }
+
+    body.accessibility-line-spacing p, 
+    body.accessibility-line-spacing li, 
+    body.accessibility-line-spacing h1, 
+    body.accessibility-line-spacing h2, 
+    body.accessibility-line-spacing h3, 
+    body.accessibility-line-spacing h4, 
+    body.accessibility-line-spacing h5, 
+    body.accessibility-line-spacing h6 {
+        line-height: 2.2 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* שינויים לתצוגה במובייל */
+    @media (max-width: 576px) {
+        .accessibility-btn {
+            width: 60px;
+            height: 60px;
+        }
+
+        .accessibility-menu {
+            width: 90%;
+            left: 5%;
+            bottom: 100px;
+        }
+
+        .accessibility-buttons {
+            flex-direction: column;
+        }
+
+        .acc-btn {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
+
+<!-- הוספת סקריפט JavaScript לפונקציונליות כפתור הנגישות -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // קבלת אלמנטים
+        const accessibilityBtn = document.getElementById('accessibilityBtn');
+        const accessibilityMenu = document.getElementById('accessibilityMenu');
+        const closeAccessibilityMenu = document.getElementById('closeAccessibilityMenu');
+        const increaseTextBtn = document.getElementById('increaseText');
+        const decreaseTextBtn = document.getElementById('decreaseText');
+        const resetTextBtn = document.getElementById('resetText');
+        const highContrastBtn = document.getElementById('highContrast');
+        const invertColorsBtn = document.getElementById('invertColors');
+        const resetColorsBtn = document.getElementById('resetColors');
+        const highlightLinksBtn = document.getElementById('highlightLinks');
+        const readableFontBtn = document.getElementById('readableFont');
+        const lineSpacingBtn = document.getElementById('lineSpacing');
+        const resetAllBtn = document.getElementById('resetAll');
+        const accessibilityStatementLink = document.getElementById('accessibilityStatementLink');
+        const accessibilityStatementModal = document.getElementById('accessibilityStatementModal');
+        const closeStatementBtn = document.getElementById('closeStatement');
+        
+        // שמירת ההגדרות ב-localStorage
+        function saveAccessibilitySettings() {
+            const settings = {
+                fontSize: document.body.classList.contains('accessibility-large-text') ? 'large' : 
+                          document.body.classList.contains('accessibility-larger-text') ? 'larger' : 'normal',
+                highContrast: document.body.classList.contains('accessibility-high-contrast'),
+                inverted: document.body.classList.contains('accessibility-inverted'),
+                highlightLinks: document.body.classList.contains('accessibility-highlight-links'),
+                readableFont: document.body.classList.contains('accessibility-readable-font'),
+                lineSpacing: document.body.classList.contains('accessibility-line-spacing')
+            };
+            
+            localStorage.setItem('accessibilitySettings', JSON.stringify(settings));
+        }
+        
+        // טעינת הגדרות מ-localStorage
+        function loadAccessibilitySettings() {
+            const settings = JSON.parse(localStorage.getItem('accessibilitySettings'));
+            if (!settings) return;
+            
+            // הגדרת גודל טקסט
+            if (settings.fontSize === 'large') {
+                document.body.classList.add('accessibility-large-text');
+                increaseTextBtn.classList.add('active');
+            } else if (settings.fontSize === 'larger') {
+                document.body.classList.add('accessibility-larger-text');
+                increaseTextBtn.classList.add('active');
+            }
+            
+            // הגדרת ניגודיות
+            if (settings.highContrast) {
+                document.body.classList.add('accessibility-high-contrast');
+                highContrastBtn.classList.add('active');
+            }
+            
+            // הגדרת היפוך צבעים
+            if (settings.inverted) {
+                document.body.classList.add('accessibility-inverted');
+                invertColorsBtn.classList.add('active');
+            }
+            
+            // הגדרת הדגשת קישורים
+            if (settings.highlightLinks) {
+                document.body.classList.add('accessibility-highlight-links');
+                highlightLinksBtn.classList.add('active');
+            }
+            
+            // הגדרת פונט קריא
+            if (settings.readableFont) {
+                document.body.classList.add('accessibility-readable-font');
+                readableFontBtn.classList.add('active');
+            }
+            
+            // הגדרת ריווח שורות
+            if (settings.lineSpacing) {
+                document.body.classList.add('accessibility-line-spacing');
+                lineSpacingBtn.classList.add('active');
+            }
+        }
+        
+        // איפוס כל ההגדרות
+        function resetAllSettings() {
+            document.body.classList.remove(
+                'accessibility-large-text',
+                'accessibility-larger-text',
+                'accessibility-high-contrast',
+                'accessibility-inverted',
+                'accessibility-highlight-links',
+                'accessibility-readable-font',
+                'accessibility-line-spacing'
+            );
+            
+            // הסרת הקלאס 'active' מכל הכפתורים
+            const allButtons = document.querySelectorAll('.acc-btn');
+            allButtons.forEach(button => {
+                button.classList.remove('active');
+            });
+            
+            // מחיקת ההגדרות מה-localStorage
+            localStorage.removeItem('accessibilitySettings');
+        }
+        
+        // פתיחת תפריט הנגישות
+        accessibilityBtn.addEventListener('click', function() {
+            accessibilityMenu.classList.toggle('active');
+        });
+        
+        // סגירת תפריט הנגישות
+        closeAccessibilityMenu.addEventListener('click', function() {
+            accessibilityMenu.classList.remove('active');
+        });
+        
+        // הגדלת טקסט
+        increaseTextBtn.addEventListener('click', function() {
+            if (document.body.classList.contains('accessibility-large-text')) {
+                document.body.classList.remove('accessibility-large-text');
+                document.body.classList.add('accessibility-larger-text');
+            } else if (document.body.classList.contains('accessibility-larger-text')) {
+                // כבר בגודל המקסימלי
+            } else {
+                document.body.classList.add('accessibility-large-text');
+            }
+            
+            // עדכון קלאס 'active'
+            increaseTextBtn.classList.toggle('active', 
+                document.body.classList.contains('accessibility-large-text') || 
+                document.body.classList.contains('accessibility-larger-text')
+            );
+            
+            saveAccessibilitySettings();
+        });
+        
+        // הקטנת טקסט
+        decreaseTextBtn.addEventListener('click', function() {
+            if (document.body.classList.contains('accessibility-larger-text')) {
+                document.body.classList.remove('accessibility-larger-text');
+                document.body.classList.add('accessibility-large-text');
+            } else if (document.body.classList.contains('accessibility-large-text')) {
+                document.body.classList.remove('accessibility-large-text');
+            }
+            
+            // עדכון קלאס 'active'
+            increaseTextBtn.classList.toggle('active', 
+                document.body.classList.contains('accessibility-large-text') || 
+                document.body.classList.contains('accessibility-larger-text')
+            );
+            
+            saveAccessibilitySettings();
+        });
+        
+        // איפוס גודל טקסט
+        resetTextBtn.addEventListener('click', function() {
+            document.body.classList.remove('accessibility-large-text', 'accessibility-larger-text');
+            increaseTextBtn.classList.remove('active');
+            saveAccessibilitySettings();
+        });
+        
+        // ניגודיות גבוהה
+        highContrastBtn.addEventListener('click', function() {
+            document.body.classList.toggle('accessibility-high-contrast');
+            highContrastBtn.classList.toggle('active');
+            
+            if (document.body.classList.contains('accessibility-inverted')) {
+                document.body.classList.remove('accessibility-inverted');
+                invertColorsBtn.classList.remove('active');
+            }
+            
+            saveAccessibilitySettings();
+        });
+        
+        // היפוך צבעים
+        invertColorsBtn.addEventListener('click', function() {
+            document.body.classList.toggle('accessibility-inverted');
+            invertColorsBtn.classList.toggle('active');
+            
+            if (document.body.classList.contains('accessibility-high-contrast')) {
+                document.body.classList.remove('accessibility-high-contrast');
+                highContrastBtn.classList.remove('active');
+            }
+            
+            saveAccessibilitySettings();
+        });
+        
+        // איפוס צבעים
+        resetColorsBtn.addEventListener('click', function() {
+            document.body.classList.remove('accessibility-high-contrast', 'accessibility-inverted');
+            highContrastBtn.classList.remove('active');
+            invertColorsBtn.classList.remove('active');
+            saveAccessibilitySettings();
+        });
+        
+        // הדגשת קישורים
+        highlightLinksBtn.addEventListener('click', function() {
+            document.body.classList.toggle('accessibility-highlight-links');
+            highlightLinksBtn.classList.toggle('active');
+            saveAccessibilitySettings();
+        });
+        
+        // פונט קריא
+        readableFontBtn.addEventListener('click', function() {
+            document.body.classList.toggle('accessibility-readable-font');
+            readableFontBtn.classList.toggle('active');
+            saveAccessibilitySettings();
+        });
+        
+        // ריווח שורות
+        lineSpacingBtn.addEventListener('click', function() {
+            document.body.classList.toggle('accessibility-line-spacing');
+            lineSpacingBtn.classList.toggle('active');
+            saveAccessibilitySettings();
+        });
+        
+        // איפוס כל ההגדרות
+        resetAllBtn.addEventListener('click', function() {
+            resetAllSettings();
+        });
+        
+        // פתיחת הצהרת נגישות
+        accessibilityStatementLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            accessibilityStatementModal.classList.add('active');
+        });
+        
+        // סגירת הצהרת נגישות
+        closeStatementBtn.addEventListener('click', function() {
+            accessibilityStatementModal.classList.remove('active');
+        });
+        
+        // סגירת חלוניות בלחיצה מחוץ לחלונית
+        window.addEventListener('click', function(e) {
+            if (e.target === accessibilityStatementModal) {
+                accessibilityStatementModal.classList.remove('active');
+            }
+            
+            // אם הלחיצה אינה על תפריט הנגישות ולא על כפתור הנגישות, סגור את התפריט
+            if (!accessibilityMenu.contains(e.target) && e.target !== accessibilityBtn && !accessibilityBtn.contains(e.target)) {
+                accessibilityMenu.classList.remove('active');
+            }
+        });
+        
+        // כפתור מקלדת ESC לסגירת חלוניות
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                accessibilityStatementModal.classList.remove('active');
+                accessibilityMenu.classList.remove('active');
+            }
+        });
+        
+        // טעינת הגדרות נגישות בטעינת העמוד
+        loadAccessibilitySettings();
+    });
+</script>
+</html>
